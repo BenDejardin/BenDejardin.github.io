@@ -2,10 +2,7 @@
 <html lang="fr">
 
 <head>
-  <!-- <meta
-      name="google-site-verification"
-      content="Hdo0lMbkkzh9B8Mgez8sxXnqFkRNxtLcPxXJtjK_DPM"
-    /> -->
+  <meta name="google-site-verification" content="Hdo0lMbkkzh9B8Mgez8sxXnqFkRNxtLcPxXJtjK_DPM" />
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
@@ -404,6 +401,21 @@
             </div>
           </div>
         </div>
+
+
+        <div data-aos="fade-up" data-filter=".filter-personnel">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-personnel">
+            <div class="portfolio-wrap" id="divProjetPlus">
+              <img src="assets/img/portfolio/Vetux4.png" class="img-fluid" alt="" />
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/Vetux4.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i
+                    class="bx bx-zoom-in"></i></a>
+                <a href="Portfolio/Vetux-line-details.html" title="More Details"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
     <!-- End Portfolio Section -->
@@ -417,15 +429,30 @@
         <div style="display: flex; flex-wrap: wrap;" class='' id="v_Techno">
           <script>
             const veille = document.getElementById('v_Techno');
+
+            let texts = [
+              "<b>Exploiter les données SEO, un atout indispensable ? </b><br> L’analyse des requêtes effectuées sur Google est depuis plus d’une décennie la clé de voûte des consultants en stratégie de référencement.",
+              "<b>Les changements des titres par Google : Comment en tirer profit en 2022 ?</b> <br> Parmi les plus importantes mises à jour de Google en 2021, la modification des titres affichés dans les SERP est peut-être une des plus enrichissantes d’un point de vue SEO.",
+              "<b>Conseil SEO pour le mois de Mars 2022 : </b><br> Fin du premier trimestre 2022 est déjà proche! Ne vous laissez pas dépasser par le temps et gardez votre longueur d’avance sur Google en rédigeant vos contenus en amont."
+            ]
+
+            let liens = [
+              "https://www.veille-digitale.com/exploiter-les-donnees-seo/",
+              "https://www.veille-digitale.com/les-changements-des-titres-par-google-comment-en-tirer-profit-en-2022/",
+              "https://www.myjalis.fr/details-conseils+seo+pour+le+mois+de+mars+2022+par+nos+referenceurs+a+marseille-9334.html"
+            ]
             for (let index = 0; index < 3; index++) {
-              veille.innerHTML += "<div class='col-lg-4 col-md-6 text-center'><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDhEkFH6_cLQg9XAkY0GfNupNiSJ0s9BmaymWABx7WtzYuWor9weQgy77iWh9JPIHyuOc&usqp=CAU'><p class='infoVeille'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><button class='btn btn-outline-primary'>+ Détails</button></div>";
+              veille.innerHTML += "<div class='col-lg-4 col-md-6 text-center'><img style='width: 350px' src='https://universduweb.be/wp-content/uploads/2021/12/B5441374-E3D9-4644-9FD1-21566E6EF40F-760x400-1.jpeg'><p class='infoVeille'>" + texts[index] + "</p><a href='" + liens[index] + "' class='btn btn-primary' target='_blank'>+ Détails</a></div>";
             }
           </script>
         </div>
 
         <div class="text-center m-top-3">
-          <a href="https://feedly.com" target="_blank" class="btn btn-outline-primary btn-lg btn-block">
+          <a href="veille_tech.html" target="_blank" class="btn btn-outline-primary btn-lg btn-block">
             Veille Technologique Complète
+          </a>
+          <a href="https://feedly.com" target="_blank" class="btn btn-outline-primary btn-lg btn-block">
+            Flux RSS avec Feedly
           </a>
         </div>
       </div>
