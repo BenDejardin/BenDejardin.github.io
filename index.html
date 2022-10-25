@@ -154,7 +154,7 @@
     <!-- End About Section -->
 
     <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
+    <section id="resume" class="resume section-bg">
       <div class="container">
         <div class="section-title" style="padding-bottom: 0px">
           <h2>Parcours</h2>
@@ -184,7 +184,6 @@
                   Développeur Web</a>
               <p>
                 HTML, CSS, Javascript, PHP, MySQL, Bootstrap et Wordpress
-              </p>
               </p>
             </div>
 
@@ -247,7 +246,7 @@
     <!-- End Resume Section -->
 
     <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
+    <section id="skills" class="skills">
       <div class="container">
         <div class="section-title">
           <h2>Compétences</h2>
@@ -318,8 +317,42 @@
     </section>
     <!-- End Skills Section -->
 
+    <!-- ======= Certification Section ======= -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <section id="certification" class="section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Certification</h2>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+          <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/img/Certification/HTML_CSS_Certification.jpg" class="d-block rounded mx-auto w-50" alt="Certification HTML/CSS">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/Certification/WordPress_Certification.jpg" class="d-block rounded mx-auto w-50" alt="Certification Wordpress">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Précédent</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Suivant</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Certification Section -->
+
     <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
+    <section id="portfolio" class="portfolio">
       <div class="container">
         <div class="section-title">
           <h2>Portfolio</h2>
@@ -424,44 +457,6 @@
         </div>
     </section>
     <!-- End Portfolio Section -->
-
-    <section id="veille" class="">
-      <div class="container">
-        <div class="section-title">
-          <h2>Veille</h2>
-        </div>
-
-        <div style="display: flex; flex-wrap: wrap;" class='' id="v_Techno">
-          <script>
-            const veille = document.getElementById('v_Techno');
-
-            let texts = [
-              "<b>Exploiter les données SEO, un atout indispensable ? </b><br> L’analyse des requêtes effectuées sur Google est depuis plus d’une décennie la clé de voûte des consultants en stratégie de référencement.",
-              "<b>Les changements des titres par Google : Comment en tirer profit en 2022 ?</b> <br> Parmi les plus importantes mises à jour de Google en 2021, la modification des titres affichés dans les SERP est peut-être une des plus enrichissantes d’un point de vue SEO.",
-              "<b>Conseil SEO pour le mois de Mars 2022 : </b><br> Fin du premier trimestre 2022 est déjà proche! Ne vous laissez pas dépasser par le temps et gardez votre longueur d’avance sur Google en rédigeant vos contenus en amont."
-            ]
-
-            let liens = [
-              "https://www.veille-digitale.com/exploiter-les-donnees-seo/",
-              "https://www.veille-digitale.com/les-changements-des-titres-par-google-comment-en-tirer-profit-en-2022/",
-              "https://www.myjalis.fr/details-conseils+seo+pour+le+mois+de+mars+2022+par+nos+referenceurs+a+marseille-9334.html"
-            ]
-            for (let index = 0; index < 3; index++) {
-              veille.innerHTML += "<div class='col-lg-4 col-md-6 text-center'><img style='width: 350px' src='https://universduweb.be/wp-content/uploads/2021/12/B5441374-E3D9-4644-9FD1-21566E6EF40F-760x400-1.jpeg'><p class='infoVeille'>" + texts[index] + "</p><a href='" + liens[index] + "' class='btn btn-primary' target='_blank'>+ Détails</a></div>";
-            }
-          </script>
-        </div>
-
-        <div class="text-center m-top-3">
-          <a href="veille_tech.html" class="btn btn-outline-primary btn-lg btn-block">
-            Veille Technologique Complète
-          </a>
-          <a href="https://feedly.com" target="_blank" class="btn btn-outline-primary btn-lg btn-block">
-            Flux RSS avec Feedly
-          </a>
-        </div>
-      </div>
-    </section>
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
